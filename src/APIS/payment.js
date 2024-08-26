@@ -12,7 +12,7 @@ if (token) {
 }
 
 export default function checkout({cardId,shippingAddress}){
-    return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cardId}?url=https://mayarkhaled111.github.io/E-Commerce/#`,{shippingAddress},{headers:{token}})
+    return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cardId}?url=https://mayarkhaled111.github.io/E-Commerce`,{shippingAddress},{headers:{token}})
 }
 
 export function payCash({cardId,shippingAddress}){
@@ -24,4 +24,5 @@ export function payCash({cardId,shippingAddress}){
 export function getAllOrders(){
     return axios.get(`https://ecommerce.routemisr.com/api/v1/orders/user/${userId}`)
 }
+
 
