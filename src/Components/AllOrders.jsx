@@ -18,7 +18,7 @@ export default function AllOrders() {
   return (
     <>
     <div className='flex flex-wrap text-center container'>
-      {orders.map((ele) => <div key={ele?._id} className='dashboard w-1/3'>
+      {orders.map((ele) => <div key={ele?._id} className='dashboard md:w-1/3'>
         <div className="card ">
           <h3 className='text-green-700 pb-3 text-xl'>Order Details</h3>
           <p className='text-gray-400 py-2'><span>Created At:</span> {new Date(ele?.createdAt).toLocaleDateString()}</p>
